@@ -1,0 +1,165 @@
+
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>悠活森林</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="http://localhost/travel/index.php">
+            <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            Forest</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">旅遊列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">最新消息</a>
+                </li>
+                <li class="nav-item">                    
+                            <a class="nav-link text-light" href="#">會員登入</a>
+                            </li>
+            </ul>
+        </div>
+    </div>
+</nav>    <div class="box1 d-flex align-items-center justify-content-center">
+    <h1 class="text-light">悠活森林</h1>
+</div>
+<div class="container-fluid">
+    <div class="p-1 w-75 m-auto">
+        <h2 class="d-block mt-4 text-center mb-3">山林新景色</h2>
+        <p class="m-2 p-1 line_height">森林，是一個高密度樹木的區域（或歷史上，森林是一個為狩獵而留出的荒地），
+            涵蓋大約9.4％的地球表面（或30％的佔總土地面積）。森林覆蓋著全球面積的9.4%，
+            全球陸地面積的30%（在工業化前約佔全球面積的15.6%，全球陸地面積的50%），
+            森林對二氧化碳下降、動物群落、調節水文湍流和鞏固土壤起著重要作用，
+            是地球生物圈中最重要的生境之一，由於人類自學會農業技術以來過度開發森林的因素，
+            使得地球環境出現巨大變化，目前各國都在進行植林以恢復生態平衡，人類與森林的關係統稱為森林學。
+            森林中的生物量主要是以樹木為主，不同的文化會對森林有不同的定義，
+            包括其規模以及其中有的生物。森林一般是指一塊有許多樹木的區域，
+            但任何植物密度高的區域都可以視為森林，例如水底的植被（海藻林），甚至也包括真菌。
+            典型的森林會由林上（林冠）或是林下組成。林下可以再細分為灌木層，
+            草本層和苔蘚層、以及土壤中的微生物。在一些複雜的森林中，也會有一些較低的樹木。
+            森林提供人類許多不同的資源，對人類非常重要：包括儲存二氧化碳、調節氣候、淨化水源以及減輕像洪水等自然災害。
+            森林中也包括地球陸地上90%的生物多樣性。</p>
+    </div>
+    <div class="m-5"></div>
+    <div class="box2 w-75 m-auto">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h3>清幽小徑</h3>
+                <img src="f1.jpg" alt="" class="w-100">
+                <button class="btn text-primary mt-2" value="清幽小徑">了解更多</button>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h3>絢麗極光</h3>
+                <img src="f2.jpg" alt="" class="w-100">
+                <button class="btn text-primary mt-2" value="絢麗極光">了解更多</button>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h3>湛藍湖畔</h3>
+                <img src="f3.jpg" alt="" class="w-100">
+                <button class="btn text-primary mt-2" value="湛藍湖畔">了解更多</button>
+            </div>
+        </div>
+    </div>
+    <div class="w-75 p-0 m-0 m-auto">
+        <div class="row">
+            <div id="show_img" class="p-0 mb-4 col-md-4 "></div>
+            <div id="show" class=" d-none p-0 col-md-8 m-0 d-flex align-items-center"></div>
+        </div>
+
+    </div>
+
+    <div class="p-3"></div>
+</div>    <footer>
+    <div class="row p-1 w-75 m-auto">
+        <div class="mt-3 p-1"></div>
+        <div class="container text-light">
+            <div class="row">
+                <div class="col-md-4 mb-3 ">
+                    <h4 class=""><img src="logo.png" width="30" height="30" class="d-inline align-top" alt="" loading="lazy">
+                        清幽森林</h4>
+                    <h6 class="mt-3">電話:0912345678</h6>
+                    <h6>電子郵件:123@gmail.com</h6>
+                </div>
+                <div class="col-md-3 ml-auto mb-3">
+                    <h5 class="border-bottom border-light p-1">關於我們</h5>
+                    <ul class="n-p">
+                        <li><a href="#">聯絡我們</a></li>
+                        <li><a href="#">常見問題</a></li>
+                        <li><a href="#">交通資訊</a></li>
+                    </ul>                    
+                </div>
+                <div class="col-md-3">
+                    <h5 class="border-bottom border-light p-1">活動一覽</h5>
+                    <ul class="n-p">
+                        <li><a href="#">湖邊露營</a></li>
+                        <li><a href="#">日出涼亭</a></li>
+                        <li><a href="#">清爽森林浴</a></li>
+                        <li><a href="#">花海咖啡廳</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 p-1"></div>
+    </div>
+</footer>    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    
+    <script>
+        $(document).ready(function() {
+            $("button").click(function(e) {
+                /*
+                $.ajax({
+                    url: "tools/index_ajax.php?show="+$(this).val(),
+                    success: function(result) {
+                        $("#show").html(result);
+                    }
+                });
+                */
+                // var str = $(this).val() ;
+                // var xhr = new XMLHttpRequest();
+                // xhr.onload = function() {
+                //     if (xhr.status == 200) {
+                //         responseobject = JSON.parse(xhr.responseText);  
+                //         var getcontent = responseobject["display"].find(ary => ary.title === str )['content']                 
+                //         var content_str = '<p class="bg-glass d-flex align-items-center p-5">'+ getcontent +'</p>' ;
+                //         $("#show").html(content_str);
+                //         $("#show").removeClass("d-none");
+                //         var img_name = responseobject["display"].find(ary => ary.title === str )['image'];
+                //         var htmlstr = '<img src="img/'+ img_name +'" alt="">';
+                //         $("#show_img").html(htmlstr);
+                //     }
+                // }
+                // xhr.open('GET', 'tools/show.json', true);
+                // xhr.send(null);
+            });
+        });
+    </script>
+</body>
+
+</html>
