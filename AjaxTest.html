@@ -12,6 +12,7 @@
 <script>
   function ajx(){
     let ad = document.getElementById('address').value
+    if(ad.length <= 0 ) return ;
     axios.get(ad)
       .then(function (response) {
         // handle success
