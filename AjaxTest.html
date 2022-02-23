@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<button onclick="ajx()">click</button>
+<h3 id="text"></h3>
+<script>
+  function ajx(){
+    axios.get('https://localhost:44344/Home/ajaxData1')
+      .then(function (response) {
+        // handle success
+        console.log(response);
+        document.getElementById('text').innerText = response.data.name
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  }
+</script>
+</body>
+</html>
