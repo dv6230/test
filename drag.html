@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 參考來源 https://github.com/SortableJS/Vue.Draggable -->
+    <meta charset="utf-8"/>
+    <title>vue Drag</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vue/2.5.2/vue.min.js"></script>
+    <!-- CDNJS :: Sortable (https://cdnjs.com/) -->
+    <script src="//cdn.jsdelivr.net/npm/sortablejs@1.8.4/Sortable.min.js"></script>
+    <!-- CDNJS :: Vue.Draggable (https://cdnjs.com/) -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.20.0/vuedraggable.umd.min.js"></script>
+    <style scoped>
+        .myItem {
+            padding: 5px;
+            border: 1px solid gray;
+            cursor: move;
+        }
+
+        .myItem:hover {
+            background-color: #f1f1f1;
+            cursor: move;
+        }
+    </style>
+</head>
+<body style="padding:10px;">
+<div id="app">
+    <draggable v-model="myArray">
+        <transition-group>
+            <div v-for="element in myArray" :key="element.id">
+                <div class="myItem">
+                    {{element.name}}
+                </div>
+            </div>
+        </transition-group>
+    </draggable>
+</div>
+<script>
+
+    Vue.component('vuedraggable', window.vuedraggable)
+    let app = new Vue({
+        el: '#app',
+        components: {
+            vuedraggable: window.vuedraggable,
+        },
+        data() {
+            return {
+                drag: false,
+                myArray: [
+                    {id: 1, name: '欄位1'},
+                    {id: 2, name: '欄位2'},
+                    {id: 3, name: '欄位3'},
+                    {id: 4, name: '欄位4'}
+                ]
+            };
+        },
+        methods: {}
+    });
+</script>
+</body>
+</html>
